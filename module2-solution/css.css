@@ -3,30 +3,41 @@
 	margin:0;
 	padding: 0;
 }
-.container{
-	width: 90%;
-	background-color: white;
-}
 body{
 	font-family:'Poppins',"Helvetica Neue",sans-serif;
 	font-size:1rem;
-	background: linear-gradient(to bottom right,#12c2e9,#c471ed,#f64f59)
+	background-image: linear-gradient(#12c2e9,#c471ed,#f64f59);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
+h1{
+	text-align: center;
+}
+div.container{
+	position:relative;
+	margin-right:auto;
+	margin-left: auto;
+	width: 90%;
+	background-color: white;
+	overflow: hidden;
+}
 div.contain{
-	padding:5px;
+	padding:10px;
 	margin-top: 50px;
+	margin-bottom: 25px;
+	overflow: hidden;
+	float: left;
 }
 div.part{
-	float: left;
+	margin-top:10px;
 	background-color: #060c21;
 	position: relative;
 	border:3px black solid;
-	border-radius: 5px;
+	border-radius: 10px;
+	height: auto;
 }
-span{
-	display: inline-block;
+div.title{
+	display: block;
 	border-bottom: 1px black solid;
 	border-left: 1px black solid;
 	text-align: center;
@@ -34,14 +45,16 @@ span{
 	right: 0px;
 	top: 0px;
 	padding: 5px;
-	background-color:#ffffff
+	background-color: white;
 	color: black;
 }
 section{
+	margin-top: 20px;
 	text-align: center;
 	padding:15px;
 	color: gold;
 }
+
 @media (min-width: 992px){
 	div.contain{
 		width:33%;
@@ -52,7 +65,7 @@ section{
 		width: 50%;
 	}
 }
-@media(max-width: 767px){
+@media(min-width: 400px)and(max-width: 767px){
 	div.contain{
 		width: 100%;
 	}
